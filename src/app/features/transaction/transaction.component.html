@@ -1,0 +1,37 @@
+<div class="logo">
+
+  <a class="block p-4" href="/home"><span class="btn-back pi pi-angle-left"></span></a>
+
+</div>
+
+<div class="balance-box flex flex-column align-items-center justify-content-center">
+  <p class=" text-2xl">Amount paid</p>
+  <span class="mt-2 text-5xl">0.0 ETH</span>
+</div>
+
+
+<div class="transactions-box p-4">
+  <div class="transactions-box-outer pb-4 pt-4 flex flex-column align-items-start justify-content-start">
+    <h2 class="ml-4 mt-2 w-11 text-5xl transaction-header">Transaction detail</h2>
+
+    <ul class="w-12 mt-2 text-3xl transaction-list flex flex-column align-items-center">
+      <li class="mb-4  pt-1 w-11 flex flex-row align-items-center justify-content-between">Create date
+        <span>{{transaction?.createDate}}</span>
+      </li>
+      <li class="mb-4  pt-1 w-11 flex flex-row align-items-center justify-content-between">Due date
+        <span>{{transaction?.dueDate}}</span></li>
+      <li class="mb-4 pt-1 w-11 flex flex-row align-items-center justify-content-between">Total payments left
+        <span>{{transaction?.totalPayments}}</span>
+      </li>
+      <li class="mb-4 pt-1 w-11 flex flex-row align-items-center justify-content-between">Daily payment
+        <span>{{transaction?.payment}}</span>
+      </li>
+      <li class="mb-4 pt-1 w-11 flex flex-row align-items-center justify-content-between">Payment interval
+        <span>{{transaction?.paymentInterval}}</span>
+      </li>
+<!--<li class="mb-4 pt-1 w-11 flex flex-row align-items-center justify-content-between">Client&ndash;&gt;-->
+<!--        <span>Lidl</span>-->
+<!--      </li>-->
+    </ul>
+  </div>
+</div>

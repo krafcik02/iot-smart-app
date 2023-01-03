@@ -1,0 +1,19 @@
+<div class="logo w-12 flex flex-column align-items-center justify-content-end">
+</div>
+<a class="p-8 w-4" href="/"><span class="btn-back pi pi-sign-out"></span></a>
+
+<div class="balance-box flex flex-column align-items-center justify-content-center">
+  <p class=" text-2xl">Your balance</p>
+  <span class="mt-2 text-5xl">{{balance}} ETH</span>
+</div>
+
+
+<div class="transactions-box p-4">
+  <h2 class="ml-4 mt-2 w-11 transaction-header">Transactions</h2>
+  <div class="transactions-box-outer pb-4 pt-2 flex flex-column align-items-center justify-content-start">
+    <app-transaction-item *ngFor="let item of transactions" class="w-11" [transaction]="item">
+    </app-transaction-item>
+
+  </div>
+</div>
+

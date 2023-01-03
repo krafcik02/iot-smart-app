@@ -1,0 +1,24 @@
+@import "src/styles";
+
+button {
+  font-size: 2rem;
+}
+
+input {
+  color: $primary;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.forgot-password {
+  color: $secondary;
+  text-decoration: underline;
+}
+
+.sign-up {
+  color: $text-white;
+  background: #1f1f1f;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<div class="transaction-item mt-4 p-4 flex flex-row align-items-center justify-content-between"
+     (click)="openTransaction(transaction.id)">
+  <div class="flex service flex-column justify-content-around">
+    <p class="flex service-name text-3xl">{{transaction?.totalPayments}} payments left</p>
+    <p class="flex service-type text-lg">{{transaction?.payment}}ETH {{transaction.paymentInterval}}</p>
+  </div>
+  <div><span class="price text-4xl">Total {{transaction?.totalAmount}} ETH</span></div>
+</div>

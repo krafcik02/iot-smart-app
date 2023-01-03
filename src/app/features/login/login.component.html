@@ -1,0 +1,31 @@
+<div class="logo"></div>
+<h1 class="ml-4 mb-8">Welcome <br>Back!</h1>
+<div class="flex flex-column w-full align-items-center">
+  <div class="w-9 mb-5">
+    <input required type="email" pInputText class="p-inputtext-lg" placeholder="Email">
+  </div>
+  <div class="w-9 mb-1">
+    <input required type="password" pInputText class="p-inputtext-lg" placeholder="Password">
+  </div>
+</div>
+<br>
+<br>
+<div class="w-12 text-2xl">
+  <div class="flex flex-row align-items-center justify-content-evenly">
+    <div class="flex flex-column w-4">
+      <p-checkbox class="justify-content-center" [(ngModel)]="value" [binary]="true"
+                  [label]="'Remember me'"></p-checkbox>
+    </div>
+    <div class="flex flex-column w-4">
+      <a class="forgot-password justify-content-center" href="#">Forgot password?</a>
+    </div>
+  </div>
+</div>
+<div class="mt-8 text-4xl">
+  <div class="flex flex-row align-items-center justify-content-evenly">
+    <button class="ml-4 w-4 btn-sign-up" pButton label="Sign up"></button>
+    <button class="ml-4 w-4 btn-log-in" pButton label="Log in" (click)="login()"></button>
+  </div>
+</div>
+
+
